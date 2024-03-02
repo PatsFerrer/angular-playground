@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  produtos:string[] = [];
+  produtos: string[] = [];
 
   constructor() {
     this.produtos = [
@@ -15,7 +15,12 @@ export class CardComponent implements OnInit {
       "cabo",
       "fonte"
     ]
-   }
+  }
+
+  adicionar() {
+    // this.produtos.push("Patricia"); /* adiciona */
+    this.produtos.pop(); /* remove */
+  }
 
   ngOnInit(): void {
   }
