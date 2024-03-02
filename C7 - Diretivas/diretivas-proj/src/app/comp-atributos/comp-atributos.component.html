@@ -1,4 +1,9 @@
-<!-- [ngClass]: chama nossa propriedade 'estilo' na classe do ts -->
+<!-- [ngClass]: chama nossa propriedade 'estilo' na classe do TS -->
 <p [ngClass]="estilo">comp-atributos works!</p>
 
 <button (click)="trocarCor()">Change color</button>
+
+<!-- ngStyle dinâmico vindo do TS -->
+<h1 [ngStyle]="{'background': corFundo , 'color': corDaFonte}">ANGULAR COURSE</h1>
+<!-- ngStyle cravado -->
+<h1 [ngStyle]="{'background': 'green' }">Teste de fundo</h1>

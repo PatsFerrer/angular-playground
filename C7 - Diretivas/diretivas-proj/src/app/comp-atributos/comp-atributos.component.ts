@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comp-atributos.component.css']
 })
 export class CompAtributosComponent implements OnInit {
-  
-  estilo: string = 'disable'; // chama nossa classe CSS
+
+  estilo: string = 'disable'; // 'disable' é a nossa classe na CSS
+  corFundo: string = 'blue';  // nosso CSS inline
+  corDaFonte: string = 'red';  
 
   constructor() { }
 
