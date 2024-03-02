@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
   produtos: string[] = [];
+  menuType: string = 'diretor'; // o meu switch case depende disso, como 'diretor' nao existe, ele cai no 'ngSwitchDefault'
 
   constructor() {
     this.produtos = [
