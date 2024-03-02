@@ -1,4 +1,8 @@
-<app-comp-atributos></app-comp-atributos>
+<app-comp-atributos>
+<!-- É utilizado no <ng-content select="h2"> q está no comp-atributos.component.html -->
+    <h2>Olá</h2>
+    <p>Eu vim de fora</p>
+</app-comp-atributos>
 
 <!-- Se isAliveCard for false, mostra o 'anotheBlock' -->
 <app-card *ngIf="isAliveCard; else anotherBlock"></app-card>

@@ -8,6 +8,10 @@
 <!-- ngStyle cravado -->
 <!-- <h1 [ngStyle]="{'background': 'green' }">Teste de fundo</h1> -->
 
+<!-- o conteúdo desse ng-content está vindo do meu app.component.html -->
+<ng-content select="h2"></ng-content>
+<ng-content select="p"></ng-content>
+
 <!-- Pra trabalhar com forms, precisa importar o 'FormsModule' no app.module.ts -->
 <h1>Lista de compras</h1>
 <p>Adicione um item</p>
