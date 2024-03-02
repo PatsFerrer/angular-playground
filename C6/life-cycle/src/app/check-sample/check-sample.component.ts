@@ -1,32 +1,37 @@
-import { Component, 
-  OnInit, 
-  DoCheck, 
-  AfterContentChecked, 
-  AfterContentInit, 
-  AfterViewChecked, 
-  AfterViewInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  DoCheck,
+  AfterContentChecked,
+  AfterContentInit,
+  AfterViewChecked,
+  AfterViewInit,
+  OnDestroy
+} from '@angular/core';
 
 @Component({
   selector: 'app-check-sample',
   templateUrl: './check-sample.component.html',
   styleUrls: ['./check-sample.component.css']
 })
-export class CheckSampleComponent implements OnInit, 
-DoCheck, 
-AfterContentChecked, 
-AfterContentInit, 
-AfterViewChecked, 
-AfterViewInit {
+export class CheckSampleComponent
+  implements OnInit,
+  DoCheck,
+  AfterContentChecked,
+  AfterContentInit,
+  AfterViewChecked,
+  AfterViewInit,
+  OnDestroy {
 
   quantidade: number = 0;
 
   constructor() { }
 
-  adicionar(){
+  adicionar() {
     this.quantidade += 1;
   }
 
-  decrementar(){
+  decrementar() {
     this.quantidade -= 1;
   }
   // checked -> content -> view
@@ -40,7 +45,7 @@ AfterViewInit {
   ngAfterViewInit(): void {
     console.log('ngAfterViewInit')
   }
-  
+
   // após alguma alteração, verifica o conteúdo
   ngAfterContentChecked(): void {
     console.log('ngAfterContentChecked')
@@ -57,6 +62,10 @@ AfterViewInit {
 
   ngOnInit(): void {
     console.log('OnInit')
+  }
+
+  ngOnDestroy(): void {
+    console.log('Goodbye my friend');
   }
 
 }
