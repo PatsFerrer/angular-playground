@@ -12,6 +12,7 @@ export class CompAtributosComponent implements OnInit {
   corDaFonte: string = 'red';  
   item: string = ''; // ngModel
   lista:string[] = [];
+  isEnableBlock: boolean = false;
 
   constructor() { }
 

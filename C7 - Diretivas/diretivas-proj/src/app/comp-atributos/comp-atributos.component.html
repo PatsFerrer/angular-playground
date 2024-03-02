@@ -20,3 +20,14 @@
 </ul>
 
 <hr>
+
+<!-- por padrão, <ng-template> sempre será false, ou seja não vai aparecer -->
+<ng-template [ngIf]="isEnableBlock">
+    <a href="#">Finalizar compra</a>
+</ng-template>
+<br>
+<ng-template [ngIf]="true">
+    <a href="#">Adicionar ao carrinho</a>
+</ng-template>
+
+<hr>
