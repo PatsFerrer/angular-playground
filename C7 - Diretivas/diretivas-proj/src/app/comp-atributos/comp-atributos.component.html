@@ -6,4 +6,17 @@
 <!-- ngStyle dinâmico vindo do TS -->
 <h1 [ngStyle]="{'background': corFundo , 'color': corDaFonte}">ANGULAR COURSE</h1>
 <!-- ngStyle cravado -->
-<h1 [ngStyle]="{'background': 'green' }">Teste de fundo</h1>
+<!-- <h1 [ngStyle]="{'background': 'green' }">Teste de fundo</h1> -->
+
+<!-- Pra trabalhar com forms, precisa importar o 'FormsModule' no app.module.ts -->
+<h1>Lista de compras</h1>
+<p>Adicione um item</p>
+<input type="text" [(ngModel)]="item">
+<button (click)="adicionarLista()">Adicionar</button>
+<p>{{ item }}</p>
+
+<ul>
+    <li *ngFor="let elemento of lista">{{elemento }}</li>
+</ul>
+
+<hr>
