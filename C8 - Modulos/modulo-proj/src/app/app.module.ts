@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+// importando nosso módulo
+import { ListaModule } from './lista/lista.module'
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -12,7 +15,8 @@ import { AppComponent } from './app.component';
   // aqui pode importar outros módulos
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ListaModule
   ],
   // aqui ficam o que eu quero fornecer para outros módulos
   exports: [], // não vem por padrão nesse módulo principal, pois não faz sentido
